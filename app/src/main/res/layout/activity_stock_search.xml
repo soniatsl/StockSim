@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stocksim.stockSearchActivity">
+
+    <TextView
+        android:id="@+id/stockCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/stockName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@id/stockCode"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/stockCode"
+        android:id="@+id/latestUpdateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest update: "
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/stockCode"
+        app:layout_constraintStart_toEndOf="@+id/latestUpdateText"
+        android:id="@+id/stockDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/currentPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/latestUpdateText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Price:"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        app:layout_constraintStart_toEndOf="@+id/currentPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/stockDate"
+        android:id="@+id/stockPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/stockChange"
+        app:layout_constraintTop_toBottomOf="@+id/stockDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="10dp"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/stockPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/stockChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/openText"
+        app:layout_constraintTop_toBottomOf="@+id/stockChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open: "
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/open"
+        app:layout_constraintTop_toBottomOf="@+id/stockChart"
+        app:layout_constraintStart_toEndOf="@id/openText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/volumeText"
+        app:layout_constraintTop_toBottomOf="@+id/stockChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/volume"
+        android:text="Volume: "
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/stockChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/highText"
+        app:layout_constraintTop_toBottomOf="@+id/openText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High: "
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/high"
+        app:layout_constraintTop_toBottomOf="@+id/openText"
+        app:layout_constraintStart_toEndOf="@id/highText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/lowText"
+        app:layout_constraintTop_toBottomOf="@+id/openText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/low"
+        android:text="Low: "/>
+
+    <TextView
+        android:id="@+id/low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/openText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textLotSize"
+        app:layout_constraintTop_toBottomOf="@id/high"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        android:text="Lot Size: "
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lotSize"
+        app:layout_constraintTop_toBottomOf="@+id/high"
+        app:layout_constraintStart_toEndOf="@id/textLotSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textCostPerLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textLotSize"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        android:text="Cost Per Lot: "
+        android:textColor="@android:color/black"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/costPerLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textLotSize"
+        app:layout_constraintStart_toEndOf="@id/textCostPerLot"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/qLot"
+        app:layout_constraintTop_toBottomOf="@+id/textLotSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="\?"
+        android:textSize="20dp"
+        android:tooltipText="What is lot Size?"/>
+
+    <fragment
+        class="com.shinobicontrols.charts.ChartFragment"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="210dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stockChart">
+    </fragment>
+
+    <Button
+        android:id="@+id/buy"
+        android:text="Buy"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,4 @@
+#Tue Mar 06 20:29:48 HKT 2018
+base.0=/Users/tamseelong/AndroidStudioProjects/StockSim/app/build/intermediates/transforms/dexMerger/debug/27
+path.0=classes.dex
+renamed.0=classes.dex

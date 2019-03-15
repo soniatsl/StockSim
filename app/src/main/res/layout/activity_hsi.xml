@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stocksim.MainActivity">
+
+    <TextView
+        android:id="@+id/textLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Updated HSI"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textLastUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textLast"
+        android:text="Last Update: "/>
+
+    <TextView
+        android:id="@+id/lastUpdateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textLast"
+        app:layout_constraintStart_toEndOf="@id/textLastUpdate"/>
+
+    <TextView
+        android:id="@+id/currentHSI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textLastUpdate"
+        android:textSize="40dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/HSIChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textLastUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="30dp"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/HSIPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/HSIChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="35dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <fragment
+        class="com.shinobicontrols.charts.ChartFragment"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chart">
+    </fragment>
+
+    <Button
+        android:id="@+id/horizontalView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart"
+        android:text="Horizontal View"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/lightBlue"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:id="@+id/hsi"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="HSI"
+            android:background="@color/lightBlue"/>
+        <Button
+            android:id="@+id/hkDetailStock"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="HK Detail Stock"
+            android:textSize="10dp"/>
+        <Button
+            android:id="@+id/tips"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Tips"
+            android:textSize="10dp"/>
+        <Button
+            android:id="@+id/tradedList"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Traded List"
+            android:textSize="10dp"/>
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stocksim">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_128"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_128"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HSIActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".DetailActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".TipsActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".ListActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".createAccountActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".ProfileNoLoginActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".ListLoginActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".stockSearchActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".hsiChartHorizontal"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity android:name=".buyStockDialog" />
+        <activity android:name=".buyStockLogin" />
+        <activity android:name=".buyStockSuccess" />
+        <activity android:name=".buyStockUnsuccessful" />
+        <activity android:name=".tradeDetailActivity" />
+        <activity android:name=".sellStockDialog" />
+        <activity android:name=".QandA" />
+        <activity android:name=".News" />
+        <activity android:name=".Instruction" />
+        <activity android:name=".buyHistoryActivity" />
+        <activity android:name=".qDialog" />
+        <activity android:name=".worldIndices"/>
+        <activity android:name=".indexDialog"/>
+        <activity android:name=".Splash_demo"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

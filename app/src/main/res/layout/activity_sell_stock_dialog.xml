@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sellStockDialog">
+
+<TextView
+    android:id="@+id/textSellStock"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:textSize="20dp"
+    android:textColor="@android:color/black"
+    android:text="Sell Stock"/>
+
+    <TextView
+        android:id="@+id/sellStockCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textSellStock"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sellStockName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/sellStockCode"
+        app:layout_constraintTop_toBottomOf="@+id/textSellStock"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textCurrentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sellStockCode"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Current Price: "/>
+
+    <TextView
+        android:id="@+id/currentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textCurrentPrice"
+        app:layout_constraintTop_toBottomOf="@+id/sellStockCode"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textNoOfLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textCurrentPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="How many lots to sell?"/>
+
+    <EditText
+        android:id="@+id/editNoOfStock"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textNoOfLot"
+        app:layout_constraintTop_toBottomOf="@+id/textCurrentPrice"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/buttonCal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textNoOfLot"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:background="@color/lightBlue"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/sellNoOfLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCal"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:id="@+id/lotLotSizeMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCal"
+        app:layout_constraintStart_toEndOf="@id/sellNoOfLot"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:text="Lot x"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/lotSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCal"
+        app:layout_constraintStart_toEndOf="@id/lotLotSizeMultiply"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:id="@+id/lotSizeEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCal"
+        app:layout_constraintStart_toEndOf="@id/lotSize"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Lot Size = "/>
+
+    <TextView
+        android:id="@+id/noOfShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCal"
+        app:layout_constraintStart_toEndOf="@id/lotSizeEqual"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:id="@+id/textNoOfShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCal"
+        app:layout_constraintStart_toEndOf="@id/noOfShare"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Shares"/>
+
+    <TextView
+        android:id="@+id/noOfShare2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sellNoOfLot"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:id="@+id/noOfShareMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/noOfShare2"
+        app:layout_constraintTop_toBottomOf="@+id/sellNoOfLot"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Shares x HK$"/>
+
+    <TextView
+        android:id="@+id/sellCurrentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/noOfShareMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/sellNoOfLot"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:id="@+id/priceEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/sellCurrentPrice"
+        app:layout_constraintTop_toBottomOf="@+id/sellNoOfLot"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="= HK$"/>
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/priceEqual"
+        app:layout_constraintTop_toBottomOf="@+id/sellNoOfLot"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/noOfShare2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Total: "/>
+
+    <TextView
+        android:id="@+id/totalAmount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textTotalAmount"
+        app:layout_constraintTop_toBottomOf="@+id/noOfShare2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textAmountHaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textTotalAmount"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Amount having: "/>
+
+    <TextView
+        android:id="@+id/amountHaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textTotalAmount"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/textAmountHaving"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/profitOrLoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textTotalAmount"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/confirmToBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textAmountHaving"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Confirm to sell?"/>
+
+    <Button
+        android:id="@+id/buttonYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textAmountHaving"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/confirmToBuy"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="Yes"
+        android:background="@android:color/holo_green_light"/>
+
+    <Button
+        android:id="@+id/buttonNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textAmountHaving"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/buttonYes"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:text="No"
+        android:background="@android:color/holo_red_light"/>
+
+
+</android.support.constraint.ConstraintLayout>

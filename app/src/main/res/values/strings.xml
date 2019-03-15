@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Stock Sim</string>
+    <string-array name="qAndA">
+        <item>Trading Hour</item>
+        <item>Calculation formula for HSI</item>
+        <item>50 HSI constituent stocks</item>
+    </string-array>
+
+    <string-array name="mainlandIndices">
+        <item>CSCSZQ 深港通</item>
+        <item>CSCSHQ 沪港通</item>
+        <item>SZSEASI 国证指数</item>
+        <item>CSI300 滬深300</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stocksim.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/QandA"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:text="Essential Informations"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:background="@color/lightBlue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_marginTop="100dp"
+            android:id="@+id/News"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:text="Finance news"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:background="@color/lightBlue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_marginTop="180dp"
+            android:id="@+id/worldIndices"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:text="Other Indices"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:background="@color/lightBlue" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <Button
+            android:id="@+id/hsi"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="HSI" />
+
+        <Button
+            android:id="@+id/hkDetailStock"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="HK Detail Stock"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/tips"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/lightBlue"
+            android:text="Tips"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/tradedList"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Traded List"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="64dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

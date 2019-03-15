@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buyStockUnsuccessful">
+
+    <TextView
+        android:id="@+id/textUnsuccessful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:text="Oops! You don't have enough money!"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:id="@+id/textBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textUnsuccessful"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        android:text="Your Balance: "
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/newBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textUnsuccessful"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/textBalance"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textBalance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Close"
+        android:textSize="20dp"
+        android:background="@android:color/holo_green_light"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tamseelong/AndroidStudioProjects/StockSim/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/Users/tamseelong/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3d0b4f0d8e86fdce2c733f91ff11bed8/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "619,685,746,812",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "680,741,807,874"
+                    }
+                },
+                {
+                    "source": "/Users/tamseelong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/75becdb5d0e1729f99f5f02d6e98a15d/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,212,347,416,480,549",
+                        "endColumns": "156,134,68,63,68,69",
+                        "endOffsets": "207,342,411,475,544,614"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/tamseelong/AndroidStudioProjects/StockSim/C:\\Users\\ee3316\\AndroidStudioProjects\\StockSim\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
+            "map": [
+                {
+                    "source": "/Users/tamseelong/AndroidStudioProjects/StockSim/C:\\Users\\ee3316\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\3510bc87db5ec713e46323a84f81b1be\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "619,685,746,812",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "680,741,807,874"
+                    }
+                },
+                {
+                    "source": "/Users/tamseelong/AndroidStudioProjects/StockSim/C:\\Users\\ee3316\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\fb00b9db938b7462cbba39312d36eee2\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,212,347,416,480,549",
+                        "endColumns": "156,134,68,63,68,69",
+                        "endOffsets": "207,342,411,475,544,614"
+                    }
+                }
+            ]
+        }
+    ]
+}

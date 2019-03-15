@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tamseelong/AndroidStudioProjects/StockSim/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/tamseelong/.gradle/caches/transforms-1/files-1.1/shinobicontrols-android-charts-trial-java-1.9.4-0.aar/017d5c6cc5eaba213146453c164827bf/res/values-small-v4/values-small-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,131",
+                        "endColumns": "75,85",
+                        "endOffsets": "126,212"
+                    }
+                }
+            ]
+        }
+    ]
+}

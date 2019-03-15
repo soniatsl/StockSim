@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tamseelong/AndroidStudioProjects/StockSim/C:\\Users\\ee3316\\AndroidStudioProjects\\StockSim\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/tamseelong/AndroidStudioProjects/StockSim/C:\\Users\\ee3316\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\fb00b9db938b7462cbba39312d36eee2\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/tamseelong/AndroidStudioProjects/StockSim/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/tamseelong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/75becdb5d0e1729f99f5f02d6e98a15d/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

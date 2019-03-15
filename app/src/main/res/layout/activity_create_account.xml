@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stocksim.createAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/lightBlue"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/lineReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="~~~~~ Registration ~~~~~"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/regUsername"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/lightBlue"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"
+                android:drawableStart="@drawable/ic_account_box_black_24dp"
+                android:hint=" Username"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textColorHint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineReg" />
+
+            <EditText
+                android:id="@+id/regEmail"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/lightBlue"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint=" Email"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textColorHint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/regUsername" />
+
+            <EditText
+                android:id="@+id/regPassword"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/lightBlue"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint=" Password (at least 6 digits)"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textColorHint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/regEmail" />
+
+            <EditText
+                android:id="@+id/regRetypePassword"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/lightBlue"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint=" Retype password"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textColorHint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/regPassword" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/acceptPrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Accept Privacy Policy"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/regPassword" />
+
+                <Button
+                    android:id="@+id/Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="290dp"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:background="@color/darkBlue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/regPassword" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

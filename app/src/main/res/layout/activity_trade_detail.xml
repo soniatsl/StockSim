@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tradeDetailActivity">
+
+    <TextView
+        android:id="@+id/tradeStockCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tradeStockName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tradeStockCode"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textCurrentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tradeStockCode"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Current Price: "/>
+
+    <TextView
+        android:id="@+id/currentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textCurrentPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tradeStockCode"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/textTradedDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textCurrentPrice"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Traded Detail - Owned Share: "/>
+
+    <TextView
+        android:id="@+id/textOwnedLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textTradedDetail"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="No. of Lots Owned: "/>
+
+    <TextView
+        android:id="@+id/ownedLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textTradedDetail"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/textOwnedLot"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textLotSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textOwnedLot"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="lotSize: "/>
+
+    <TextView
+        android:id="@+id/lotSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textOwnedLot"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/textLotSize"
+        android:textSize="20dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textLotSize"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Total Amount/share: HK$"/>
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textLotSize"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/textTotalAmount"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/sellButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textTotalAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Sell"
+        android:textSize="20dp"
+        android:background="@android:color/holo_green_light"/>
+
+
+</android.support.constraint.ConstraintLayout>
